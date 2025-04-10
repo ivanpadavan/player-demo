@@ -1,0 +1,24 @@
+:host {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  box-shadow: 0 1vw 2vw -1vw rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,.3);
+  display: block;
+}
+
+.second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 2px;
+  height: 1.5rem;
+  background: gold;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 0 100%;
+}

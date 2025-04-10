@@ -1,0 +1,81 @@
+.instruction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+  .col {
+    min-width: 27rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% + 3rem);
+      height: calc(100% + 3rem);
+      box-shadow: 0 0 0 0.25rem #BA9D5A;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: .4rem;
+      pointer-events: none;
+    }
+
+    > h2 {
+      position: absolute;
+      top: -2.7rem;
+      height: .8rem;
+      background-color: #080522;
+      box-shadow: 0 0 .25rem .5rem #080522;
+      color: white;
+      margin: 0;
+      z-index: 999;
+    }
+
+    a:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  position: relative;
+  padding: 0.875rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: .4rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.btn.selected, .btn:active {
+  background: #BA9D5A;
+  color: black;
+}
+
+.btn.disabled {
+  pointer-events: none;
+  opacity: .6;
+}
+
+.btn:focus::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.25rem);
+  height: calc(100% + 0.25rem);
+  box-shadow: 0 0 0 0.25rem #BA9D5A;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: .4rem;
+}

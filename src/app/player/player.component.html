@@ -1,0 +1,37 @@
+<video #video></video>
+<a href="javascript:void 0" *ngIf="showInfoPanel" [autofocus]="true" class="info-panel" data-spatial-navigation-action="scroll">
+  <pre [innerText]="info"></pre>
+</a>
+<div class="TV-player-ATV-SMART" [class.d-none]="showInfoPanel || !(showControls$ | async)">
+  <div class="TV-player-titles">
+    <div *ngIf="video.duration < 60 * 60 * 60" class="pcont-and-time">
+      <div class="view"><div class="element">{{ (video.duration - video.currentTime) | time }}</div></div>
+    </div>
+  </div>
+  <div *ngIf="video.duration < 60 * 60 * 60" class="track-bar">
+    <div class="timeline">
+      <div class="done-wrapper" [style.width]="timeline$ | async"></div>
+      <a href="javascript:void 0" class="circle"
+         [style.left]="seekTimeline$ | async"
+         (keydown)="maybeSeek($any($event))"
+      ></a>
+    </div>
+  </div>
+  <div class="TV-player-buttons">
+    <div class="left-buttons">
+        <a href="javascript:void 0" (click)="back()" class="button"><img class="img" src="assets/img/arrow-left.svg" /></a>
+        <a href="javascript:void 0" (click)="replay()" class="button"><img class="img" src="assets/img/replay.svg" /></a>
+    </div>
+    <div class="center-buttons">
+      <a class="play">
+          <a class="button" [autofocus]="true" href="javascript:void 0" (click)="playPause()">
+            <img class="img" [src]="video.paused ? 'assets/img/play.svg' : 'assets/img/pause.svg'" />
+          </a>
+          <div class="title" [textContent]="video.paused ? 'Запустить' : 'Приостановить'"></div>
+      </a>
+    </div>
+    <div class="right-buttons">
+        <a href="javascript:void 0" (click)="showInfo()" class="button"><img class="img" src="assets/img/info.svg" /></a>
+    </div>
+  </div>
+</div>

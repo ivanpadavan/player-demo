@@ -1,0 +1,51 @@
+{
+  "name": "player-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --host 0.0.0.0 --disable-host-check",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "@kion/waterbase": "file:externals/kion-waterbase-1.2.8.tgz",
+    "@types/webostvjs": "^1.2.5",
+    "globalthis": "^1.0.3",
+    "rxjs": "~7.8.0",
+    "shaka-player": "^4.14.7",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^17.0.2",
+    "@angular-devkit/build-angular": "^17.3.6",
+    "@angular/cli": "^17.3.6",
+    "@angular/compiler-cli": "^17.3.0",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@swc/core": "^1.4.17",
+    "@swc/helpers": "^0.5.11",
+    "@types/jasmine": "~5.1.0",
+    "babel-loader": "^9.1.3",
+    "browserslist": "^4.23.0",
+    "dotenv": "^16.4.5",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "swc-loader": "^0.2.6",
+    "typescript": "~5.4.2"
+  }
+}

@@ -1,0 +1,208 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.info-panel {
+  white-space: pre;
+  position: absolute;
+  width: 72rem;
+  height: 39rem;
+  margin: auto;
+  background: rgba(255, 255, 255, .8);
+  padding: 1rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  color: black;
+}
+
+.TV-player-ATV-SMART {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 2.5rem 0 3rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.TV-player-ATV-SMART .TV-player-titles {
+  display: flex;
+  width: 72rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.TV-player-ATV-SMART .pcont-and-time {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.TV-player-ATV-SMART .view {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.TV-player-ATV-SMART .element {
+  position: relative;
+  width: fit-content;
+  text-shadow: 0px 1px 2px #00000099;
+  font-family: "MTS Sans-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+
+.TV-player-ATV-SMART .track-bar {
+  position: relative;
+  width: 72rem;
+  height: .4rem;
+  margin: 1.25rem 0;
+}
+
+.TV-player-ATV-SMART .timeline {
+  display: flex;
+  flex-direction: column;
+  width: 72rem;
+  height: 100%;
+  align-items: flex-start;
+  background-color: #eeeeee99;
+  border-radius: .4rem;
+
+  .done-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ba9d5a;
+    border-radius: .4rem;
+  }
+
+  .circle {
+    position: absolute;
+    opacity: 0;
+    width: .8rem;
+    height: .8rem;
+    background-color: #eeeeee;
+    border-radius: .4rem;
+    transform: translate(-50%, -25%);
+  }
+  .circle:focus {
+    opacity: 1;
+  }
+}
+
+.TV-player-ATV-SMART .downloaded {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eeeeee;
+  border-radius: .4rem;
+}
+
+.TV-player-ATV-SMART .TV-player-buttons {
+  width: 72rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+
+  .left-buttons > *:not(:last-child) {
+    margin-right: .8334rem;
+  }
+
+  .left-buttons {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .right-buttons {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .center-buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: 6rem;
+  }
+}
+
+.TV-player-ATV-SMART .button {
+  display: block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: #00142426;
+  border-radius: 2rem;
+}
+
+.TV-player-ATV-SMART .button:focus {
+  background-color: #ba9d5a99;
+}
+
+
+.TV-player-ATV-SMART .img {
+  position: absolute;
+  width: 2.33rem;
+  height: 2.33rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TV-player-ATV-SMART .play {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TV-player-ATV-SMART .title {
+  position: relative;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+}
+
+.d-none {
+  display: none !important;
+}

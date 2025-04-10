@@ -1,0 +1,17 @@
+{
+  "icon": "webos-80x80.png",
+  "main": "index.html",
+  "bgImage": "webos-launcher.png",
+  "title": "KION demo",
+  "type": "web",
+  "resolution": "1920x1080",
+  "version": "0.0.0",
+  "splashBackground": "webos-splash.png",
+  "bgColor": "#0399AD",
+  "vendor": "",
+  "largeIcon": "webos-130x130.png",
+  "iconColor": "#0399AD",
+  "id": "ru.kion.demo",
+  "deeplinkingParams": "{ \"handledBy\" : \"app\", \"contentTarget\" : \"$CONTENTID\" }",
+  "disableBackHistoryAPI": true
+}

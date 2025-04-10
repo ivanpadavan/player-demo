@@ -1,0 +1,63 @@
+.kion-logo {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  display: flex;
+  width: 6rem;
+  height: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/kion.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/MTSCompact-Medium.woff2") format("woff2");
+  font-family: "MTSCompact";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/MTSSans-Regular__W.woff2") format("woff2");
+  font-family: "MTS Sans-Regular";
+  font-display: swap;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #221105;
+}
+
+html {
+  font-size: 24px;
+  @media (max-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  width: 80rem;
+  height: 45rem;
+  position: relative;
+}
+
+body * {
+  outline: none;
+  font-family: "MTSCompact", system-ui;
+}
+
+.d-none {
+  display: none !important;
+}
+.opacity-0 {
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+}
