@@ -8,6 +8,10 @@ Be sure that you have .env file for valid build
 
 You can write me in telegram for fast feedback @ifrolkin
 
+## Access on Samsung TV
+- Open any Samsung app in DEBUG mode
+- Execute command `location.href="https://samsung-demo.image-description-generator.site/"`
+
 ## Problem
 
 Channels with a large difference between the **Availability Start Time (AST)** and the current time are playing **without audio**.
