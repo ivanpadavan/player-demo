@@ -10,14 +10,8 @@ const login = process.env.LOGIN;
 const password = process.env.PASSWORD;
 
 const drmUrls = {
-  widevine: {
-    local: '/widevine/',
-    prod: 'https://htv-wv.mts.ru:443/'
-  },
-  playready: {
-    local: '/playready',
-    prod: 'https://htv-prls.mts.ru:443/PlayReady/rightsmanager.asmx'
-  }
+  widevine: '/widevine/',
+  playready: '/playready/',
 }
 
 @Injectable({
@@ -64,9 +58,8 @@ export class Auth {
     )
 
     return firstValueFrom(query$).then((r: any) => {
-      const flavour = location.href.includes('localhost') ? 'local' : 'prod';
-      this.playready = `${drmUrls.playready[flavour]}?deviceId=${r.VUID}`;
-      this.widevine = `${drmUrls.widevine[flavour]}?deviceId=${r.VUID}`;
+      this.playready = `${drmUrls.playready}?deviceId=${r.VUID}`;
+      this.widevine = `${drmUrls.widevine}?deviceId=${r.VUID}`;
     });
   }
 }
